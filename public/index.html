@@ -3531,6 +3531,9 @@
                             self.goHome();
                             return false;
                         }
+
+                        // 在首页：不拦截返回键，让系统处理（退出 APP）
+                        // 不调用 e.preventDefault()，让事件传递给 Android
                     }
 
                     // 其他控制只在播放页面 + TV 模式生效
